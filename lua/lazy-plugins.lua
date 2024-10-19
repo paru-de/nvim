@@ -12,6 +12,7 @@ require('lazy').setup({
   require 'plugins.qol.telescope',
   require 'plugins.qol.mini',
   require 'plugins.qol.autopairs',
+  require 'plugins.qol.terminal',
 
   -- LSP
   require 'plugins.lsp.lspconfig',
