@@ -1,13 +1,10 @@
 -- [[ Setting options ]]
 -- See `:help vim.opt`
--- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
 
 -- Make line numbers default
 vim.opt.number = true
--- You can also add relative line numbers, to help with jumping.
---  Experiment for yourself to see if you like it!
--- vim.opt.relativenumber = true
+vim.opt.relativenumber = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
@@ -62,4 +59,24 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+vim.o.termguicolors = true
+
+-- update title with filepath
+vim.opt.title = true
+vim.opt.titlelen = 0 -- do not shorten title
+vim.opt.titlestring = 'nvim | %t'
+
+-- Enable line wrapping and set the wrap width to 80 characters
+vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.opt.list = false
+vim.opt.textwidth = 80
+
+if vim.bo.filetype == 'python' then
+  vim.o.nowrap = true
+end
+
+-- Highlight the 80th column (it's ugly but effective)
+-- Note: xiyaowong/vircolumn.nvim turns this into a slim non-ugly line instead
+-- vim.opt.colorcolumn = { 100 }
 -- vim: ts=2 sts=2 sw=2 et
