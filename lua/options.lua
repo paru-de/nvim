@@ -78,5 +78,5 @@ end
 
 -- Highlight the 80th column (it's ugly but effective)
 -- Note: xiyaowong/vircolumn.nvim turns this into a slim non-ugly line instead
--- vim.opt.colorcolumn = { 100 }
+vim.opt.colorcolumn = { 100 }
 -- vim: ts=2 sts=2 sw=2 et
