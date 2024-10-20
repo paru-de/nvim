@@ -63,4 +63,7 @@ vim.api.nvim_set_keymap(
 )
 -- see terminal.lua for test command
 
+-- Cheat Sheet
+vim.api.nvim_set_keymap('n', '<leader>C', ':CheatSH<CR>', { noremap = true, silent = true, desc = 'Open [C]heat Sheet' })
+
 -- vim: ts=2 sts=2 sw=2 et

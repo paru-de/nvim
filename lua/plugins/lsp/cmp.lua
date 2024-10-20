@@ -40,7 +40,9 @@ return {
       local cmp = require 'cmp'
       local luasnip = require 'luasnip'
       luasnip.config.setup {}
-
+      formatting = {
+        format = require('nvim-highlight-colors').format,
+      }
       cmp.setup {
         snippet = {
           expand = function(args)

@@ -27,6 +27,9 @@ require('lazy').setup({
   -- Tests
   require 'plugins.tests.coverage',
 
+  -- Helpers
+  require 'plugins.help.cheatsheet',
+
   -- Import smaller plugins from plugins/init.lua
   { import = 'plugins' },
 }, {
