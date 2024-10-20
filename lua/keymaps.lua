@@ -52,4 +52,15 @@ vim.api.nvim_set_keymap('i', '<C-s>', '<Esc>:w<CR>a', { noremap = true, silent =
 -- NeoTree
 vim.api.nvim_set_keymap('n', '<leader>e', ':Neotree toggle<CR>', { noremap = true, silent = true, desc = 'File [E]xplorer' })
 
+-- Run tests
+-- This is temporary, I should install neotest at some point
+
+vim.api.nvim_set_keymap(
+  'n',
+  '<leader>Tr',
+  ':!go test -coverprofile=coverage.out<CR>',
+  { noremap = true, silent = true, desc = 'Go: Generate coverage [report]' }
+)
+-- see terminal.lua for test command
+
 -- vim: ts=2 sts=2 sw=2 et

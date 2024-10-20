@@ -24,6 +24,9 @@ require('lazy').setup({
   -- Debug
   require 'plugins.debug.debug',
 
+  -- Tests
+  require 'plugins.tests.coverage',
+
   -- Import smaller plugins from plugins/init.lua
   { import = 'plugins' },
 }, {
